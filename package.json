@@ -1,0 +1,52 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Get started with basic React boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node ./scripts/setup.js",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint"
+    ]
+  },
+  "pre-commit": "lint:staged",
+  "keywords": [
+    "react",
+    "boilerplate"
+  ],
+  "author": "Anthony Ng <newyork.anthonyng@gmail.com> (http://anthonyng.me)",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "html-webpack-plugin": "^4.2.1",
+    "lint-staged": "^10.2.2",
+    "postcss-loader": "^3.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@xstate/react": "^0.8.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.3.5",
+    "xstate": "^4.9.1"
+  }
+}
